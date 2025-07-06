@@ -9,18 +9,26 @@
 </head>
 <body class="bg-neutral-900 text-white">
 
-  <!-- Navbar -->
-  <nav class="flex items-center justify-between flex-wrap bg-black p-4 border-b border-orange-500">
-    <div class="flex items-center flex-shrink-0 text-white">
-      <img src="imagens/logo-sa.jpeg" alt="Logo" class="h-10 rounded"/>
-      <span class="font-semibold text-xl tracking-tight ml-2">SA Comunicação Visual</span>
+ <!-- Navbar -->
+<nav class="flex items-center justify-between flex-wrap bg-black p-4 border-b border-orange-500">
+    <div class="flex items-center flex-shrink-0 text-white ml-6">
+        <img src="imagens/logo2.png" alt="Logo" class="h-12 rounded">
     </div>
-    <div class="hidden md:flex space-x-6">
-      <a href="index.html" class="hover:text-orange-500">Início</a>
-      <a href="adesivos.html" class="hover:text-orange-500">Adesivos</a>
-      <a href="contato.html" class="hover:text-orange-500">Contato</a>
+    <div class="hidden md:flex space-x-4">
+        <a href="index.html"
+           class="bg-orange-500 text-white px-4 py-2 rounded-xl shadow-md transition duration-300 ease-in-out hover:bg-orange-600 hover:scale-105">
+            Início
+        </a>
+        <a href="adesivos.html"
+           class="bg-orange-500 text-white px-4 py-2 rounded-xl shadow-md transition duration-300 ease-in-out hover:bg-orange-600 hover:scale-105">
+            Adesivos
+        </a>
+        <a href="contato.html"
+           class="bg-orange-500 text-white px-4 py-2 rounded-xl shadow-md transition duration-300 ease-in-out hover:bg-orange-600 hover:scale-105">
+            Contato
+        </a>
     </div>
-  </nav>
+</nav>
 
   <!-- Título -->
   <header class="text-center py-10 bg-gradient-to-r from-black via-gray-900 to-black">
@@ -64,6 +72,18 @@
         <button onclick="updateQuantity('3', -1)" class="bg-orange-500 text-black px-3 py-1 rounded">-</button>
         <span id="qty-3">0</span>
         <button onclick="updateQuantity('3', 1)" class="bg-orange-500 text-black px-3 py-1 rounded">+</button>
+      </div>
+    </div>
+
+    <!-- Exemplo de cópia de Produto com ID novo -->
+    <div class="bg-neutral-800 border border-neutral-700 rounded-lg p-4 shadow-lg hover:scale-105 transition">
+      <img src="imagens/exemplo1.jpeg" alt="Adesivo 4" class="rounded mb-4">
+      <h2 class="text-xl font-bold mb-2">Adesivo Modelo 04</h2>
+      <p class="mb-2 text-orange-400 font-semibold">R$ 10,00</p>
+      <div class="flex items-center space-x-4">
+        <button onclick="updateQuantity('4', -1)" class="bg-orange-500 text-black px-3 py-1 rounded">-</button>
+        <span id="qty-4">0</span>
+        <button onclick="updateQuantity('4', 1)" class="bg-orange-500 text-black px-3 py-1 rounded">+</button>
       </div>
     </div>
 
